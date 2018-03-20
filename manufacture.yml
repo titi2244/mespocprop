@@ -1,0 +1,16 @@
+spring.application.name: manufacture
+
+#Spring Cloud Stream
+spring.cloud.stream.bindings.qualityQ.destination: qualityQ
+spring.cloud.stream.bindings.manufactureQ.destination: manufactureQ
+
+#Flyway 
+flyway.baselineOnMigrate: true
+
+spring.jpa.hibernate.ddl-auto: validate # (2)
+spring.jpa.show-sql: true
+#spring.jpa.properties.hibernate.format_sql: true
+
+my.property: manufacture-pcfPropertiesFromConfig
+
+com.mesproto2.manufacture.auto.manufacturing: false

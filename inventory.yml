@@ -1,0 +1,14 @@
+spring.application.name: inventory
+
+#Spring Cloud Stream
+spring.cloud.stream.bindings.inventoryQ.destination: inventoryQ
+
+#Flyway 
+flyway.baselineOnMigrate: true
+
+spring.jpa.hibernate.ddl-auto: validate # (2)
+spring.jpa.show-sql: true
+#spring.jpa.properties.hibernate.format_sql: true
+
+my.property: inventory-pcfPropertiesFromConfig
+

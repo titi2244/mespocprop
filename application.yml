@@ -1,0 +1,16 @@
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.2ndPoCServiceReg.credentials.uri:http://172.31.225.155:8761}/eureka/

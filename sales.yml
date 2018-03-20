@@ -1,0 +1,11 @@
+spring.application.name: sales
+
+spring.cloud.stream.bindings.inventoryQ.destination: inventoryQ
+
+#Flyway 
+flyway.baselineOnMigrate: true
+
+#Show SQL
+spring.jpa.show-sql: true
+
+my.property: pcf-sales-PropertiesFromConfig
