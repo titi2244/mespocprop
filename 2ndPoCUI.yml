@@ -1,6 +1,6 @@
 spring.application.name: 2ndPoCUI
 
-com.mesproto2.clientui.apiGateway: apigw
+com.mesproto2.clientui.apiGateway:
 
 my.property: UI-pcfPropertiesFromConfig
 
